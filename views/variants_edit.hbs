@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>{{title}}</title>
+        <style>
+        .data{
+            width: 800px;
+            position: absolute;
+            left: 300px;
+            top: 20px;
+            bottom: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="data">
+            <form method="POST" action="/product/variant/edit/{{variants.id}}">
+            <h3>{{variants.title}}</h3>
+
+            <div class="form-group">
+            <label for="title">variants_id:</label>
+            <input type="text" class="form-control" name="id" value="{{variants.id}}" readonly>
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_product_id:</label>
+            <input type="text" class="form-control" name="product_id" value="{{variants.product_id}}" readonly>
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_title:</label>
+            <input type="text" class="form-control" name="title" value="{{variants.title}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_price:</label>
+            <input type="text" class="form-control" name="price" value="{{variants.price}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_sku:</label>
+            <input type="text" class="form-control" name="sku" value="{{variants.sku}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_position:</label>
+            <input type="text" class="form-control" name="position" value="{{variants.position}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_inventory_policy:</label>
+            <input type="text" class="form-control" name="inventory_policy" value="{{variants.inventory_policy}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_compare_at_price:</label>
+            <input type="text" class="form-control" name="compare_at_price" value="{{variants.compare_at_price}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_fulfillment_service:</label>
+            <input type="text" class="form-control" name="fulfillment_service" value="{{variants.fulfillment_service}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_inventory_management:</label>
+            <input type="text" class="form-control" name="inventory_management" value="{{variants.inventory_management}}">
+            </div>
+
+
+            <div class="form-group">
+            <label for="title">variants_option1:</label>
+            <input type="text" class="form-control" name="option1" value="{{variants.option1}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_option2:</label>
+            <input type="text" class="form-control" name="option2" value="{{variants.option2}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_option3:</label>
+            <input type="text" class="form-control" name="option3" value="{{variants.option3}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_taxable:</label>
+            <input type="text" class="form-control" name="taxable" value="{{variants.taxable}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_barcode:</label>
+            <input type="text" class="form-control" name="barcode" value="{{variants.barcode}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_grams:</label>
+            <input type="text" class="form-control" name="grams" value="{{variants.grams}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_image_id:</label>
+            <input type="text" class="form-control" name="image_id" value="{{variants.image_id}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_weight:</label>
+            <input type="text" class="form-control" name="weight" value="{{variants.weight}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_weight_unit:</label>
+            <input type="text" class="form-control" name="weight_unit" value="{{variants.weight_unit}}">
+            </div>
+
+
+            <div class="form-group">
+            <label for="title">variants_inventory_quantity:</label>
+            <input type="text" class="form-control" name="inventory_quantity" value="{{variants.inventory_quantity}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_old_inventory_quantity:</label>
+            <input type="text" class="form-control" name="old_inventory_quantity" value="{{variants.old_inventory_quantity}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_requires_shipping:</label>
+            <input type="text" class="form-control" name="requires_shipping" value="{{variants.requires_shipping}}">
+            </div>
+
+            <div class="form-group">
+            <label for="title">variants_admin_graphql_api_id:</label>
+            <input type="text" class="form-control" name="admin_graphql_api_id" value="{{variants.admin_graphql_api_id}}" readonly>
+            </div>
+
+             <div class="form-group">
+            <button type="submit" class="btn btn-primary">submit</button>
+             </div>
+            </form>
+    </div>
+</body>
+</html>
